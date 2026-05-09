@@ -63,7 +63,7 @@ void Setup_LCD()
   lcd.print("FOGGIATTO_HJ");
   lcd.setCursor(3, 1);
   lcd.print("Plasma THC");
-  delay(2500);
+  delay(3100);
   lcd.clear();
 }
 
