@@ -207,13 +207,13 @@ void doLCDMenu()
   {
     case 0:
       lcd.setCursor(0, 0);
-      lcd.print("> Exit          ");
+      lcd.print("> Sair         ");
       lcd.setCursor(0, 1);
       lcd.print("  Program       ");
       break;
     case 1:
       lcd.setCursor(0, 0);
-      lcd.print("> Program       ");
+      lcd.print("> Programa      ");
       lcd.setCursor(0, 1);
       lcd.print("  Setup         ");
       break;
@@ -221,13 +221,13 @@ void doLCDMenu()
       lcd.setCursor(0, 0);
       lcd.print("> Setup         ");
       lcd.setCursor(0, 1);
-      lcd.print("  Test          ");
+      lcd.print("  Teste         ");
       break;
     case 3:
       lcd.setCursor(0, 0);
-      lcd.print("> Test          ");
+      lcd.print("> Teste         ");
       lcd.setCursor(0, 1);
-      lcd.print("  Exit       ");
+      lcd.print("  Sair       ");
       break;
   }
 }
@@ -240,7 +240,7 @@ void doLCDProgramSellect()
   {
     case 0:
       lcd.setCursor(0, 0);
-      lcd.print(">> Exit         ");
+      lcd.print(">> Sair         ");
       lcd.setCursor(0, 1);
       lcd.print("   Load Prog: 1 ");
       break;
@@ -260,7 +260,7 @@ void doLCDProgramSellect()
       lcd.setCursor(0, 0);
       lcd.print(">> Load Prog: 3 ");
       lcd.setCursor(0, 1);
-      lcd.print("   Exit         ");
+      lcd.print("   Sair         ");
       break;
   }
 }
@@ -273,7 +273,7 @@ void doLCDMenuSetup()
   {
     case 0:
       lcd.setCursor(0, 0);
-      lcd.print(">> Exit         ");
+      lcd.print(">> Sair         ");
       lcd.setCursor(0, 1);
       lcd.print("   Delay Time   ");
       break;
@@ -287,11 +287,11 @@ void doLCDMenuSetup()
       lcd.setCursor(0, 0);
       lcd.print(">> Hysteresis   ");
       lcd.setCursor(0, 1);
-      lcd.print("   Start Voltage");
+      lcd.print("   Voltagem de inicio");
       break;
     case 3:
       lcd.setCursor(0, 0);
-      lcd.print(">> Start Voltage");
+      lcd.print(">> Voltagem de inicio");
       lcd.setCursor(0, 1);
       lcd.print("   Load Default ");
       break;
@@ -299,7 +299,7 @@ void doLCDMenuSetup()
       lcd.setCursor(0, 0);
       lcd.print(">> Load Default ");
       lcd.setCursor(0, 1);
-      lcd.print("   Exit         ");
+      lcd.print("   Sair         ");
       break;
   }
 }
@@ -335,7 +335,7 @@ void doLCDTest()
       lcd.setCursor(0, 0);
       lcd.print("Test > Torch Dn ");
       lcd.setCursor(0, 1);
-      lcd.print("       Exit     ");
+      lcd.print("      Sair       ");
       if (thcOK == 0) LCDtime = 0;
       if (LCDtime >= 200) {
         thcDwn = 0;
