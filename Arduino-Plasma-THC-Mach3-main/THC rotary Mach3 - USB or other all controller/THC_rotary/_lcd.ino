@@ -63,7 +63,7 @@ void Setup_LCD()
   lcd.print("FOGGIATTO_HJ");
   lcd.setCursor(3, 1);
   lcd.print("Plasma THC");
-  delay(3100);
+  delay(3150);
   lcd.clear();
 }
 
@@ -209,7 +209,7 @@ void doLCDMenu()
       lcd.setCursor(0, 0);
       lcd.print("> Sair         ");
       lcd.setCursor(0, 1);
-      lcd.print("  Program       ");
+      lcd.print("  Programa       ");
       break;
     case 1:
       lcd.setCursor(0, 0);
