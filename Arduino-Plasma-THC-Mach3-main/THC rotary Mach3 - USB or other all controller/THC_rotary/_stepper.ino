@@ -14,8 +14,8 @@ void Setup_Stepper()
   //digitalWrite(relayPul, HIGH);
   //digitalWrite(relay5V, HIGH);
 
-  digitalWrite(relayDir, HIGH);
-  digitalWrite(relayPul, HIGH);
+  digitalWrite(relayDir, LOW);
+  digitalWrite(relayPul, LOW);
   digitalWrite(relay5V, LOW);
 
   digitalWrite(outputDirPin, 1); // set dir HIGH starting
@@ -31,8 +31,8 @@ void RunStepper()
    // bitWrite(PORTB, 1, 0);
 
      //Relays active
-    bitWrite(PORTD, 7, 0);
-    bitWrite(PORTB, 0, 0);
+    bitWrite(PORTD, 7, 1);
+    bitWrite(PORTB, 0, 1);
     bitWrite(PORTB, 1, 1);
 
     if (thcUp == 1 || thcDwn == 1) {
@@ -62,8 +62,8 @@ void RunStepper()
     //bitWrite(PORTB, 0, 1);
     //bitWrite(PORTB, 1, 1);
 
-    bitWrite(PORTD, 7, 1);
-    bitWrite(PORTB, 0, 1);
+    bitWrite(PORTD, 7, 0);
+    bitWrite(PORTB, 0, 0);
     bitWrite(PORTB, 1, 0);
   }
 

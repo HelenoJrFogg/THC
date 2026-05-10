@@ -181,7 +181,7 @@ void doLCDDefault()
   }
   lcd.print(" ");
   lcd.setCursor(4, 0);
-  lcd.print("Set.V: ");
+  lcd.print("V.selec: ");
   lcd.print(SetV);
   lcd.print("   ");
   lcd.setCursor(0, 1);
@@ -194,7 +194,7 @@ void doLCDDefault()
   }
   lcd.print(" ");
   lcd.setCursor(4, 1);
-  lcd.print("Arc.V: ");
+  lcd.print("V. Arco: ");
   lcd.print(ArcV / 10);
   lcd.print("    ");
 }
@@ -281,23 +281,23 @@ void doLCDMenuSetup()
       lcd.setCursor(0, 0);
       lcd.print(">> Delay Time   ");
       lcd.setCursor(0, 1);
-      lcd.print("   Hysteresis   ");
+      lcd.print("   Histerese    ");
       break;
     case 2:
       lcd.setCursor(0, 0);
-      lcd.print(">> Hysteresis   ");
+      lcd.print(">> Histerese   ");
       lcd.setCursor(0, 1);
-      lcd.print("   Voltagem de inicio");
+      lcd.print(" tensao inicio");
       break;
     case 3:
       lcd.setCursor(0, 0);
-      lcd.print(">> Voltagem de inicio");
+      lcd.print(">> tensao inicio");
       lcd.setCursor(0, 1);
-      lcd.print("   Load Default ");
+      lcd.print("   Carregar Padrao ");
       break;
     case 4:
       lcd.setCursor(0, 0);
-      lcd.print(">> Load Default ");
+      lcd.print(">> Carr. val. Padrao ");
       lcd.setCursor(0, 1);
       lcd.print("   Sair         ");
       break;
