@@ -59,9 +59,9 @@ void Setup_LCD()
   lcd.createChar(1, customUp);
   lcd.createChar(2, customDown);
 
-  lcd.setCursor(1, 0);
-  lcd.print("FOGGIATTO_HelenoJ");
-  lcd.setCursor(3, 1);
+  lcd.setCursor(0, 0);
+  lcd.print("FOGGIATToHelenoJ");
+  lcd.setCursor(0, 1);
   lcd.print("Plasma THC v1.1");
   delay(3150);
   lcd.clear();
@@ -207,7 +207,7 @@ void doLCDMenu()
   {
     case 0:
       lcd.setCursor(0, 0);
-      lcd.print("> Sair         ");
+      lcd.print("> Sair          ");
       lcd.setCursor(0, 1);
       lcd.print("  Programa       ");
       break;
@@ -227,7 +227,7 @@ void doLCDMenu()
       lcd.setCursor(0, 0);
       lcd.print("> Teste         ");
       lcd.setCursor(0, 1);
-      lcd.print("  Sair       ");
+      lcd.print(">  Sair        ");
       break;
   }
 }
@@ -242,23 +242,23 @@ void doLCDProgramSellect()
       lcd.setCursor(0, 0);
       lcd.print(">> Sair         ");
       lcd.setCursor(0, 1);
-      lcd.print("  Carregar Prog: 1 ");
+      lcd.print("Carregar Prog: 1");
       break;
     case 1:
       lcd.setCursor(0, 0);
-      lcd.print(">> Carregar Prog: 1 ");
+      lcd.print(">>Carr. Prog: 1 ");
       lcd.setCursor(0, 1);
-      lcd.print("  Carregar Prog: 2 ");
+      lcd.print("Carregar Prog: 2 ");
       break;
     case 2:
       lcd.setCursor(0, 0);
-      lcd.print(">> Carregar Prog: 2 ");
+      lcd.print(">>Carr. Prog: 2  ");
       lcd.setCursor(0, 1);
-      lcd.print(" Carregar Prog: 3 ");
+      lcd.print("Carregar Prog: 3 ");
       break;
     case 3:
       lcd.setCursor(0, 0);
-      lcd.print(">> Carregar Prog: 3 ");
+      lcd.print(">>Carr. Prog: 3 ");
       lcd.setCursor(0, 1);
       lcd.print("   Sair         ");
       break;
@@ -273,9 +273,9 @@ void doLCDMenuSetup()
   {
     case 0:
       lcd.setCursor(0, 0);
-      lcd.print(">> Sair         ");
+      lcd.print(">> Sair        ");
       lcd.setCursor(0, 1);
-      lcd.print("   Tempo Atraso   ");
+      lcd.print("   Tempo Atraso");
       break;
     case 1:
       lcd.setCursor(0, 0);
@@ -293,11 +293,11 @@ void doLCDMenuSetup()
       lcd.setCursor(0, 0);
       lcd.print(">> Tensao Inicio");
       lcd.setCursor(0, 1);
-      lcd.print(" Carregar Padrao ");
+      lcd.print("Carregar Padrao ");
       break;
     case 4:
       lcd.setCursor(0, 0);
-      lcd.print(">>Car.Val.Padrao ");
+      lcd.print(">>Car.Val.Padrao");
       lcd.setCursor(0, 1);
       lcd.print("   Sair         ");
       break;
@@ -314,16 +314,16 @@ void doLCDTest()
       lcd.setCursor(0, 0);
       lcd.print("Teste > Sair         ");
       lcd.setCursor(0, 1);
-      lcd.print("    Subir Tocha   ");
+      lcd.print("  Sair do Teste    ");
       thcDwn = 0;
       thcUp = 0;
       thcOK = 0;
       break;
     case 1:
       lcd.setCursor(0, 0);
-      lcd.print("Teste> Subir Tocha");
+      lcd.print("Teste>>>           ");
       lcd.setCursor(0, 1);
-      lcd.print("     Descer Tocha  ");
+      lcd.print("    Subir Tocha  ");
       if (thcOK == 0) LCDtime = 0;
       if (LCDtime >= 100) { // 100 LCDtime = 1s
         thcDwn = 0;
@@ -333,9 +333,9 @@ void doLCDTest()
       break;
     case 2:
       lcd.setCursor(0, 0);
-      lcd.print("Teste> Descer Tocha");
+      lcd.print("Teste>>>          ");
       lcd.setCursor(0, 1);
-      lcd.print("      Sair       ");
+      lcd.print("    Descer Tocha  ");
       if (thcOK == 0) LCDtime = 0;
       if (LCDtime >= 100) {
         thcDwn = 0;
@@ -379,7 +379,7 @@ void doLCDDelayTime()
 
   double x = DT / 10.00;
   lcd.setCursor(0, 0);
-  lcd.print("Set > Delay Time");
+  lcd.print("Set>AtrasoInicio");
   lcd.setCursor(0, 1);
   lcd.print("     : ");
   lcd.print(x, 1);
@@ -400,7 +400,7 @@ void doLCDHysreresis()
 
   double x = HyS / 10.00;
   lcd.setCursor(0, 0);
-  lcd.print("Set > Hysteresis");
+  lcd.print("Set > Histerese");
   lcd.setCursor(0, 1);
   lcd.print("     :");
   lcd.write(0);
