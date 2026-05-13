@@ -86,7 +86,7 @@ unsigned long prevReadVMillis = 0;
 unsigned long readingsV = 0;
 
 //stepper motor signal frequency
-unsigned int fregCy = 4000;  // Motor speed potentiometer min 33 max 65535
+unsigned int fregCy = 2000;  // Motor speed potentiometer min 33 max 65535
 
 bool reverse = false;    // If the movement is reversed in the test menu, change it (true or false)
 
